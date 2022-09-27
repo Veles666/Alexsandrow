@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Страны Мира change</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Pangolin&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>	
+    <form id="forma">
+        Введите число<input id = "name" type="text" value="Текст"><br>
+        <button onclick='obj2.changeCountries.apply(obj1,[document.forms["forma"].elements["name"].value])
+        obj1.outCountries();
+        obj1.outCountries.call(obj2);
+        return false'>DO IT
+        </button>
+        <button onclick='let temp = document.querySelector("#pokazateli");
+        temp.innerHTML="";
+        return false'>Чистка
+        </button>
+      </form>
+    <div id="pokazateli"></div>
+    <div id="timmer"> </div>
+    <script type="text/javascript" src="scripts/countries.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+	<div id="countriesOut"></div>
+</body>
+</html>
